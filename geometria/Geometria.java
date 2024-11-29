@@ -1,3 +1,5 @@
+package geometria;
+
 import java.awt.Graphics;
 
 public abstract class Geometria {
