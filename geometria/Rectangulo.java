@@ -4,15 +4,14 @@ import java.awt.Point;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class Rectangulo extends Geometria {
+public class Rectangulo extends Geometria implements Dibujable {
     public Point inicial;
     public Point fin;
-    public Color color;
 
     public Rectangulo(Point i, Point f, Color c) {
+        super(c);
         this.inicial = i;
         this.fin = f;
-        this.color = c;
     }
 
     public double calcularArea() {

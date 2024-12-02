@@ -4,11 +4,11 @@ import javax.swing.*;
 
 import java.awt.*;
 
-public class DibujoRectangulo extends JPanel {
+public class Principal extends JPanel {
 
     public Rectangulo r1;
 
-    public DibujoRectangulo() {
+    public Principal() {
         this.r1 = new Rectangulo(new Point(300, 200), new Point(500, 300), Color.RED);
     }
 
@@ -20,7 +20,7 @@ public class DibujoRectangulo extends JPanel {
 
     public static void main(String[] args) {
         JFrame ventana = new JFrame("Dibujo de Rectángulo");
-        DibujoRectangulo panel = new DibujoRectangulo();
+        Principal panel = new Principal();
        
         ventana.add(panel);
         ventana.setSize(800, 800);
